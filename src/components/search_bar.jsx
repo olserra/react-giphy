@@ -5,12 +5,14 @@ class SearchBar extends Component {
     this.props.searchFunction(event.target.value);
   }
 
-  render(){
-    return(
-      <input type="text" className="form-control form-search"
-        onChange={this.handleUpdate}/>
+  render() {
+    return (
+      <input
+        type="text"
+        className="form-control form-search"
+        onChange={this.handleUpdate}
+      />
     );
-
   }
 }
 
